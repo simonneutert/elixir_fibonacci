@@ -24,7 +24,7 @@ defmodule Iexfib do
       1 -> IO.inspect {:ok, [1]}
       2 -> IO.inspect {:ok, [1, 1]}
       n when n > 2 and n <= 200000 -> {:ok, calcfib(limit)}
-      x when x < 0 -> {:error, "Number must be positive and smaller than 100000"}
+      x when x < 0 -> {:error, "Number must be positive and smaller than 200000"}
       _ -> {:error, "Impossible operation."}
     end
     case benchmark do
